@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyocticons"
-version = "0.1.0"
+version = "0.1.1"
 description = "python helper for github octicons"
 keywords = ["octicons", "icons"]
 authors = ["Larry Ogrodnek <ogrodnek@gmail.com>"]

@@ -15,15 +15,12 @@ def _read_icons() -> dict[str, Any]:
 _octicons = _read_icons()
 
 
-def octicon(name: str, size: int) -> Optional[str]:
+def octicon(name: str, size: int | str) -> Optional[str]:
     icon = _octicons.get(name)
     if not icon:
         return None
 
-    closest_size = find_closest_size(size, icon["heights"].keys())
-
-    print("closest_size", closest_size)
-
+    closest_size = find_closest_size(int(size), icon["heights"].keys())
     sized_icon = icon["heights"].get(closest_size)
 
     classes = ["octicon", f"octicon-{name}"]

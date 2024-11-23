@@ -2,6 +2,10 @@ This is a small wrapper around Github's [Octicons](https://primer.style/foundati
 
 # Usage
 
+```
+pip install pyocticons
+```
+
 ```python
 from pyocticons import octicon
 
